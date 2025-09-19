@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  background-color: #efefef;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  width: 282px;
+  height: 54px;
+  color: #000;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  padding-top: 25px;
+}
+
+.flex-item {
+  width: 388px;
+  height: 796px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual {
+  width: 388px;
+  height: 796px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.duo {
+  width: 388px;
+  height: 796px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(346deg, #3a0082 21.97%, #000 143.99%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.familia {
+  width: 388px;
+  height: 796px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.quadrado {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+}
+
+.quadrado1 {
+  width: 278px;
+  height: 63px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.quadrado2 {
+  width: 278px;
+  height: 63px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.quadrado3 {
+  width: 278px;
+  height: 63px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #002089;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.justify-center {
+  justify-content: center;
+}
