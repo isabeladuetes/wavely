@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Lato";
+  font-family: "Nunito";
   padding: 20px;
   color: rgb(0, 0, 0);
   background-color: #efefef;
@@ -18,10 +18,9 @@ section {
 }
 
 h1 {
-  width: 282px;
   height: 54px;
   color: #000;
-  font-size: 50px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -44,8 +43,7 @@ h1 {
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 500px;
 }
 
 .individual {
@@ -55,6 +53,26 @@ h1 {
   border-radius: 50px;
   background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.plano-individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-top: 50px;
+  border-bottom: 3px solid #FFF;
+  width: 308px;
+}
+
+.botao-assinar-individual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .duo {
@@ -64,6 +82,24 @@ h1 {
   border-radius: 50px;
   background: linear-gradient(346deg, #3a0082 21.97%, #000 143.99%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.plano-duo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+.botao-assinar-duo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .familia {
@@ -73,14 +109,26 @@ h1 {
   border-radius: 50px;
   background: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 54px;
+  font-weight: 700;
 }
 
-.quadrado {
+
+
+.plano-familia {
   display: flex;
-  gap: 300px;
+  flex-direction: column;
   justify-content: center;
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+.botao-assinar-familia {
+  display: flex;
   align-items: center;
-  height: 0px;
+  justify-content: center;
 }
 
 .quadrado1 {
@@ -90,6 +138,22 @@ h1 {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;  
+  transition: all 0.4s ease;
+}
+
+.quadrado1:hover {
+  transition: all 0.4s ease;
+  background-color: #002089;
+  color: #FFF;
 }
 
 .quadrado2 {
@@ -99,6 +163,21 @@ h1 {
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.quadrado2:hover {
+  transition: all 0.4s ease;
+  background-color: #000;
+  color: #FFF;
 }
 
 .quadrado3 {
@@ -108,8 +187,43 @@ h1 {
   border-radius: 20px;
   background: #002089;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.quadrado3:hover {
+  transition: all 0.4s ease;
+  background-color: #000;
+  color: #fff;
+}
+
+.secundario {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.principal {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+main {
+  
+  height:90vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
