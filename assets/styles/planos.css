@@ -43,7 +43,7 @@ h1 {
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  gap: 500px;
+  gap: 310px;
 }
 
 .individual {
@@ -114,7 +114,6 @@ h1 {
   flex-shrink: 0;
   border-radius: 50px;
   background: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: #000;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 54px;
@@ -127,6 +126,14 @@ h1 {
   justify-content: center;
   padding-left: 40px;
   padding-top: 50px;
+}
+
+.linha2 {
+  width: 278px;
+  height: 2px;
+  background: #000000;
+  border-radius: 2px;
+  margin: 20px 0;
 }
 
 .botao-assinar-familia {
@@ -234,6 +241,15 @@ ul {
   width: 312px;
   height: 140px;
   color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.familia ul {
+  width: 312px;
+  height: 140px;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
