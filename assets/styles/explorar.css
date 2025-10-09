@@ -1,122 +1,136 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #EFEFEF;
+  color: rgb(4, 2, 2);
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Main */
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+aside {
+  width: 200px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin: 15px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+aside li:hover {
+  color: #a2a0a1;
+}
+
+/* Área principal */
+section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Cards */
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos gerais dos cards */
+.card {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Gradientes e cores */
+.azul-escuro {
+  background: linear-gradient(180deg, #3A0082 0%, #0C001C 100%);
+}
+
+.azul-claro {
+  width: 150px;        
+  height: 200px;      
+  background: linear-gradient(to bottom,  #94DDF8 , #3A0082 ); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: absolute;  
+}
+
+.branco {
+  background-color: #fefdfd;
+}
+
+.Q1{
+  display: flex;
+  padding: 10px 38px 19px 12px;
   
-  body {
-    background: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    background: #fff;
-  }
-  
-  header img {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  header h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Layout principal */
-  main {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-  }
-  
-  /* Sidebar */
-  aside {
-    width: 180px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 20px;
-    height: fit-content;
-  }
-  
-  aside ul {
-    list-style: none;
-  }
-  
-  aside ul li {
-    margin: 15px 0;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  aside ul li:hover {
-    font-weight: bold;
-  }
-  
-  /* Área principal */
-  section {
-    flex: 1;
-    position: relative;
-  }
-  
-  section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .search-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .search-box input {
-    padding: 8px 12px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    width: 250px;
-    outline: none;
-  }
-  
-  /* Cards sobrepostos */
-  .cards {
-    position: relative;
-    width: 100%;
-    height: 600px; /* altura fixa para o "tabuleiro" dos cards */
-  }
-  
-  .card {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  /* Cores dos cards */
-  .grad-purple {
-    background: linear-gradient(to bottom, #5a00ff, #000);
-  }
-  
-  .grad-blue {
-    background: linear-gradient(to bottom, #00c6ff, #5200ff);
-  }
-  
-  .white {
-    background: #fff;
-  }
-  
-  .light {
-    background: #fcf8f8;
-  }
-  
-  
+
+}
