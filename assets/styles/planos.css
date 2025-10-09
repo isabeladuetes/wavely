@@ -255,3 +255,22 @@ ul {
   font-weight: 700;
   line-height: normal;
 }
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .add-playlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
