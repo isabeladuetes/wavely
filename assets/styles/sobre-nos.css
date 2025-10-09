@@ -71,3 +71,10 @@ h1 {
   margin-top: 60px;
   gap: 100px;
 }
+
+.imagem-equipe {
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+  gap: 100px;     
+}
