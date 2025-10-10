@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #8cecff, #002089);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  height: 20px;
+  color: #000;
+  font-style: normal;
+  line-height: normal;
+}
+
+.estilos {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.abas {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+.abas2 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  border-color: #000;
+}
+
+.adicionar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adicionar input {
+  border: 2px solid #002089;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.adicionar .label {
+  font-weight: 700;
+}
+
+.quadrados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.cartao {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.cartao .imagem {
+  background: linear-gradient(145deg, #12002f, #320064);
+  height: 150px;
+  width: 100%;
+  border-bottom: 2px solid #eee;
+}
+
+.cartao .info {
+  padding: 10px;
+}
+
+.cartao .info strong {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cartao .info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.imagem {
+   width: 50px;
+   height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .add-playlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

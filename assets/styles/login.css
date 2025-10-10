@@ -12,7 +12,6 @@ body {
   background-color: #efefef;
   margin: 300px;
   padding: 10px;
- 
 }
 
 section {
@@ -37,12 +36,12 @@ input::placeholder {
 
 
 .flex-item {
-  width: 500px;
-  height: 45px;
+  width: 600px;
+  height: 55px;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(243, 243, 243);
   margin: 9px;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,13 +51,13 @@ input::placeholder {
 }
 
 .login-button {
-  width: 200px;
-  height: 45px;
+  width: 300px;
+  height: 55px;
   background: linear-gradient(90deg, #716ed2 43.47%, #8cecff 88.94%);
 }
 
 h1 {
-  font-size: 13px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;

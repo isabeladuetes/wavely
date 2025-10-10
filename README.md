@@ -1,3 +1,4 @@
+
 # 🎵 Wavely
 
 **Wavely** é uma empresa apaixonada por música, tecnologia e inovação. Nosso objetivo é transformar a maneira como artistas, ouvintes e profissionais da indústria musical se conectam, criam e compartilham experiências sonoras.
