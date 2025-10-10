@@ -8,7 +8,6 @@
 
 body {
   font-family: "Nunito";
-  padding: 20px;
   background-color: #efefef;
   margin: 300px;
   padding: 10px;
@@ -26,14 +25,11 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Espace o placehlder da margem esquerda */
 input::placeholder {
   padding-left: 10px;
   font-size: 13px;
   color: rgb(201, 201, 201);
 }
-
-
 
 .flex-item {
   width: 600px;
@@ -43,17 +39,20 @@ input::placeholder {
   margin: 9px;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: rgb(14, 4, 4);
- padding-left: 10px;
-
+  padding-left: 10px;
 }
 
 .login-button {
   width: 300px;
   height: 55px;
   background: linear-gradient(90deg, #716ed2 43.47%, #8cecff 88.94%);
+  cursor: pointer;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
 }
 
 h1 {
@@ -94,7 +93,8 @@ h1 {
     font-size: 12px;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 14px;
   }
 }
