@@ -60,3 +60,38 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .flex-item,
+  .login-button {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .flex-item,
+  .login-button {
+    height: 50px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 14px;
+  }
+}
