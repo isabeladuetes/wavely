@@ -33,21 +33,18 @@ input::placeholder {
   color: rgb(201, 201, 201);
 }
 
-
-
 .flex-item {
   width: 600px;
   height: 55px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(243, 243, 243);
+  border: 2px solid rgb(243, 238, 238);
   margin: 9px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(14, 4, 4);
- padding-left: 10px;
-
+  color: rgb(21, 3, 3);
+  padding-left: 10px;
 }
 
 .login-button {
