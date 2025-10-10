@@ -31,16 +31,16 @@ h1 {
   flex-direction: row;
   gap: 200px;
   padding-top: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-item {
   width: 388px;
   height: 796px;
-  flex-shrink: 0;
   border-radius: 50px;
   background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
   gap: 310px;
@@ -49,7 +49,6 @@ h1 {
 .individual {
   width: 388px;
   height: 796px;
-  flex-shrink: 0;
   border-radius: 50px;
   background: linear-gradient(349deg, #8cecff 0.93%, #002089 64.74%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -84,7 +83,6 @@ h1 {
 .duo {
   width: 388px;
   height: 796px;
-  flex-shrink: 0;
   border-radius: 50px;
   background: linear-gradient(346deg, #3a0082 21.97%, #000 143.99%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -110,8 +108,7 @@ h1 {
 
 .familia {
   width: 388px;
-  height: 796px;
-  flex-shrink: 0;
+  height: 796px;;
   border-radius: 50px;
   background: #fff;
   color: #000;
@@ -145,7 +142,6 @@ h1 {
 .quadrado1 {
   width: 278px;
   height: 63px;
-  flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -170,7 +166,6 @@ h1 {
 .quadrado2 {
   width: 278px;
   height: 63px;
-  flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -194,7 +189,6 @@ h1 {
 .quadrado3 {
   width: 278px;
   height: 63px;
-  flex-shrink: 0;
   border-radius: 20px;
   background: #002089;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -256,21 +250,90 @@ ul {
   line-height: normal;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  .add-playlist {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 1024px) {
+  .flex-container {
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  .flex-item,
+  .individual,
+  .duo,
+  .familia {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
   }
 
-  .tabs {
+  .flex-container {
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .flex-item,
+  .individual,
+  .duo,
+  .familia {
+    width: 90%;
+    max-width: 380px;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .plano-individual,
+  .plano-duo,
+  .plano-familia {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  ul {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .quadrado1,
+  .quadrado2,
+  .quadrado3 {
+    width: 90%;
+    max-width: 278px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .principal {
+    font-size: 36px;
+  }
+
+  .secundario {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+
+  .quadrado1,
+  .quadrado2,
+  .quadrado3 {
+    font-size: 24px;
+  }
+
+  .flex-item,
+  .individual,
+  .duo,
+  .familia {
+    border-radius: 30px;
   }
 }
