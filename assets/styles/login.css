@@ -43,7 +43,9 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+
   color: rgb(21, 3, 3);
+  padding-left: 10px;
 }
 
 .login-button {
