@@ -73,8 +73,6 @@ h1 {
 }
 
 .imagem-equipe {
-  display: flex;
-  justify-content: left;
-  margin-top: 50px;
-  gap: 100px;     
+  
+
 }

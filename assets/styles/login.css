@@ -37,13 +37,13 @@ input::placeholder {
   width: 600px;
   height: 55px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(243, 243, 243);
+  border: 2px solid rgb(243, 238, 238);
   margin: 9px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(21, 3, 3);
 }
 
 .login-button {
