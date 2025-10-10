@@ -35,7 +35,7 @@ h1 {
     gap: 80px;
     flex-wrap: wrap;
 }
-
+ 
 .image {
     width: 280px;
     height: 280px;
@@ -92,21 +92,22 @@ h1 {
 }
 
 /* Borda com degradê */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 16px;
-    padding: 4px;
-    background: linear-gradient(93deg, #72d8df 8.17%, #350084 70.19%);
-    -webkit-mask:
+.card::before {                /* Seleciona o elemento antes do card */
+    content: "";               /* Cria o elemento vazio */
+    position: absolute;        /* Posiciona de forma absoluta dentro do card */
+    inset: 0;                  /* Faz o elemento ocupar toda a área do card */
+    border-radius: 16px;       /* Arredonda os cantos do elemento */
+    padding: 4px;              /* Espaço interno para criar o efeito de borda */
+    background: linear-gradient(93deg, #72d8df 8.17%, #350084 70.19%); /* Aplica o degradê */
+    -webkit-mask:              /* Máscara para Safari/Chrome, define áreas visíveis */
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+    -webkit-mask-composite: xor; /* Combina as máscaras */ 
+    mask-composite: exclude;      /* Combina as máscaras usando exclude (padrão) */
+    pointer-events: none;         /* Impede interação do mouse com o elemento */
 }
 
+  
 .card:hover {
     transform: translateY(-8px);
 }
