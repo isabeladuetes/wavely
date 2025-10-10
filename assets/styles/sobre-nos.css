@@ -132,6 +132,34 @@ h1 {
     line-height: 1.4;
 }
 
+.topo-sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 60px 20px;
+}
+
+.topo-sobre h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.btn-voltar {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00d2ff, #3a47d5);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-voltar:hover {
+  background: linear-gradient(90deg, #3a47d5, #00d2ff);
+  transform: scale(1.05);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .imagem-texto {
