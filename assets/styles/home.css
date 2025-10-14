@@ -15,8 +15,8 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  width: 90%;
-  max-width: 1100px;
+  width: 94%; /* antes 90% */
+  max-width: 1300px; /* antes 1100px */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@ header {
 
 .search-bar input {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   padding: 10px 40px 10px 15px;
   border: 1px solid #ddd;
   border-radius: 25px;
@@ -82,8 +82,8 @@ nav a:hover {
 .hero {
   background: #fff;
   border-radius: 20px;
-  width: 90%;
-  max-width: 1100px;
+  width: 94%; /* antes 90% */
+  max-width: 1300px; /* mais largo */
   padding: 60px 50px;
   position: relative;
   overflow: hidden;
@@ -91,10 +91,11 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin: 20px 0;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -116,7 +117,7 @@ nav a:hover {
 }
 
 .hero-img img {
-  width: 260px;
+  width: 280px;
   border-radius: 15px;
 }
 
@@ -134,36 +135,43 @@ nav a:hover {
 
 /* ===== ARTISTS ===== */
 .artists, .releases {
-  width: 90%;
-  max-width: 1100px;
-  margin-top: 50px;
+  width: 94%; /* mais largo */
+  max-width: 1300px;
+  margin-top: 60px;
 }
 
 .artists h2, .releases h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
+/* ===== LISTA DE ARTISTAS ===== */
 .artist-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly; /* distribui melhor */
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
 }
 
 .artist {
   background: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  width: 22%;
+  border-radius: 18px;
+  padding: 25px 20px;
+  width: 22%; /* ajusta largura proporcional */
+  min-width: 240px; /* evita ficar pequeno demais */
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.artist:hover {
+  transform: translateY(-5px);
 }
 
 .artist img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -182,16 +190,51 @@ nav a:hover {
 /* ===== RELEASES ===== */
 .release-list {
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
+  justify-content: space-evenly; /* ocupa mais espaço horizontal */
+  gap: 25px;
 }
 
 .release-list img {
-  width: 130px;
-  height: 130px;
-  border-radius: 10px;
+  width: 180px; /* aumentei para ocupar mais tela */
+  height: 180px;
+  border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
+
+.release-list img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .artist {
+    width: 45%;
+  }
+
+  .release-list img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist {
+    width: 100%;
+  }
+
+  .release-list {
+    justify-content: center;
+  }
+
+  .release-list img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
 
 
 
