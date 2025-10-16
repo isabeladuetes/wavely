@@ -3,36 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Wavely - Login</title>
     <link rel="stylesheet" href="../assets/styles/login.css" />
   </head>
   <body>
-    <section>
-      <div>
-        <img src="../assets/images/logo.png" alt="Logo Wavely" />
-      </div>
+    <div class="login-container">
+      <img src="logo.png" alt="Wavely Logo" class="logo" />
+      <h1>WAVELY</h1>
 
-      <div class="flex-container">
-        <input class="flex-item" placeholder="Email" type="email" id="email" />
-        <input class="flex-item" placeholder="Senha" type="password" id="senha" />
-      </div>
-
-      <div>
-        <div class="flex-item login-button" id="loginButton">Log in</div>
-        <h1>Esqueceu a senha?</h1>
-      </div>
-    </section>
-
-    <!-- Script para redirecionar ao clicar no botão -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loginButton = document.getElementById("loginButton");
-
-        loginButton.addEventListener("click", function () {
-          // Aqui você pode colocar validações, se quiser
-          window.location.href = "perfil-usuario.html";
-        });
-      });
-    </script>
+      <form>
+        <input type="email" placeholder="Email" required />
+      
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Log in</button>
+        <a href="#">Esqueceu a senha?</a>
+      </form>
+    </div>
   </body>
 </html>
