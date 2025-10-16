@@ -8,7 +8,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(to bottom right, #8cecff, #002089);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ body {
 }
 
 .info h2 i {
-  color: #2575fc;
+  color: #000000;
 }
 
 .member {
@@ -135,7 +135,7 @@ body {
 
 .back-btn {
   text-decoration: none;
-  color: #2575fc;
+  color: #000000;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -144,7 +144,7 @@ body {
 }
 
 .back-btn:hover {
-  color: #6a11cb;
+  color: #002089;
 }
 
 /* Lista de músicas */
@@ -192,7 +192,7 @@ body {
 }
 
 .play-btn {
-  color: #2575fc;
+  color: #3A0082;
   font-size: 1.3rem;
   cursor: pointer;
   transition: transform 0.2s ease;
