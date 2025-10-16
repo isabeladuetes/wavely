@@ -116,6 +116,25 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #1e3a8a; /* azul escuro bonito */
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-voltar:hover {
+  background-color: #2563eb; /* azul mais claro no hover */
+  transform: scale(1.05);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .card {

@@ -155,11 +155,6 @@ h1 {
   background: #000000;
 }
 
-.logo {
-  width: 50px;
-  height: auto;
-}
-
 :root {
   --bg: #f0f6f8;
   --card-bg: #ffffff;
