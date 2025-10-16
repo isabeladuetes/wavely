@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>Wavely - Login</title>
     <link rel="stylesheet" href="../assets/styles/login.css" />
   </head>
   <body>
-    <section>
-      <div>
-        <img src="../assets/images/logo.png" alt="" />
-      </div>
-      <div class="flex-container">
-        <input class="flex-item" placeholder="Email" />
-        <input class="flex-item" placeholder="Senha" />
-      </div>
+    <div class="login-container">
+      <img src="logo.png" alt="Wavely Logo" class="logo" />
+      <h1>WAVELY</h1>
 
-      <div>
-        <div class="flex-item login-button">Login</div>
-        <h1>Esqueceu a senha?</h1>
-      </div>
-    </section>
+      <form>
+        <input type="email" placeholder="Email" required />
+      
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Login</button>
+        <a href="">Esqueceu a senha?</a>
+      </form>
+    </div>
   </body>
 </html>
