@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +23,7 @@ h2 {
     
     
 }
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -28,6 +31,7 @@ h2 {
     height: 500px;
     margin: 0;
 }
+
 .flex-item {
     width: 174px;
     height: 151px;
@@ -39,8 +43,6 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .justify-center {
     display: flex;
@@ -56,3 +58,79 @@ h2 {
     flex-shrink: 0;
 }
 
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    position: relative;
+    height: 100px;
+}
+
+.imagem-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    margin: 8px;
+    padding: 70px;
+}
+
+.navegacao {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    text-align: right;
+}
+
+.busca-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.campo-busca {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.icone-busca {
+    background: none;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* Alinha os links verticalmente */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 2px 0;
+    margin-bottom: 5px; /* Espaçamento entre os links */
+    display: block;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
