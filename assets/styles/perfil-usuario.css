@@ -8,7 +8,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(to bottom right, #8cecff, #002089);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ body {
 }
 
 .info h2 i {
-  color: #2575fc;
+  color: #002089;
 }
 
 .member {
@@ -88,7 +88,7 @@ body {
 
 .section-header a {
   text-decoration: none;
-  color: #2575fc;
+  color: #002089;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
