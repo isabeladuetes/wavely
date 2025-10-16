@@ -1,151 +1,279 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-* {
+
+/* Paleta de Cores & Fontes */
+:root {
+    --color-dark: #1e083a; /* Roxo escuro para o fundo principal */
+    --color-primary: #a020f0; /* Roxo principal vibrante (Neon) */
+    --color-secondary: #00ffff; /* Ciano/Azul claro (Brilho) */
+    --color-text-light: #f5f5f5;
+    --color-gradient-start: #00bcd4; /* Azul claro para CTA */
+    --color-gradient-end: #8a2be2; /* Roxo para CTA */
+
+}
+
+/* Base e Fundo da Página (Simulando o efeito dinâmico) */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Nunito", sans-serif;
+    font-family: var(--font-family-base);
+    color: var(--color-text-light);
     background-color: #efefef;
-    padding: 40px 20px;
-    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }
 
+.about-page {
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--color-dark);
+    /* Efeito de ondas e estrelas para o fundo */
+    background-image: 
+       
+        radial-gradient(circle at 50% 100px, rgba(160, 32, 240, 0.3) 0%, rgba(30, 8, 58, 1) 40%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 150px, 100% 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7); 
+}
+
+/* Título Principal */
 h1 {
     text-align: center;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: var(--color-secondary);
+    text-shadow: 0 0 15px var(--color-secondary);
+}
+
+/* Seção Hero - Logo e Texto */
+.logo-text-container {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Alinha o logo e o texto na mesma linha */
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-area {
+    text-align: center;
+    min-width: 150px;
+}
+
+.logo-wavely {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    box-shadow: 0 0 25px var(--color-secondary); /* Efeito neon */
+}
+
+.logo-wavely i {
+    color: var(--color-dark);
+}
+
+
+.logo-area h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--color-text-light);
+    text-shadow: 0 0 8px var(--color-secondary);
+}
+
+.mission-statement {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description-block {
+    background-color: rgba(160, 32, 240, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid var(--color-primary);
+    line-height: 1.6;
+}
+
+/* Seção de Missão/Impacto/Valores */
+.core-values {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.core-values h3 {
+    color: var(--color-primary);
     margin-bottom: 40px;
 }
 
-.sobre-nos {
+.cards-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-/* Seção imagem + texto */
-.imagem-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-}
- 
-.image {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card-impact {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    border: 1px solid rgba(160, 32, 240, 0.4);
+    box-shadow: 0 0 10px rgba(160, 32, 240, 0.2);
 }
 
-.texto1 {
-    background: linear-gradient(93deg, #72d8df 8.17%, #350084 70.19%);
-    color: #fff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    max-width: 600px;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
+.card-impact i {
+    font-size: 2.2em;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px var(--color-secondary);
 }
 
-/* Texto 2 */
-.texto2 {
-    background: linear-gradient(93deg, #72d8df 8.17%, #350084 70.19%);
-    color: #fff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
-    max-width: 900px;
+.card-impact h4 {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: var(--color-text-light);
 }
 
-/* Cards da equipe */
-.equipe {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
+.card-impact p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95em;
 }
 
-.card {
-    background: #fff;
-    color: #000;
-    width: 260px;
-    padding: 20px;
-    border-radius: 16px;
+/* Seção da Equipe */
+.team-section {
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    padding: 60px 0 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Borda com degradê */
-.card::before {                /* Seleciona o elemento antes do card */
-    content: "";               /* Cria o elemento vazio */
-    position: absolute;        /* Posiciona de forma absoluta dentro do card */
-    inset: 0;                  /* Faz o elemento ocupar toda a área do card */
-    border-radius: 16px;       /* Arredonda os cantos do elemento */
-    padding: 4px;              /* Espaço interno para criar o efeito de borda */
-    background: linear-gradient(93deg, #72d8df 8.17%, #350084 70.19%); /* Aplica o degradê */
-    -webkit-mask:              /* Máscara para Safari/Chrome, define áreas visíveis */
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; /* Combina as máscaras */ 
-    mask-composite: exclude;      /* Combina as máscaras usando exclude (padrão) */
-    pointer-events: none;         /* Impede interação do mouse com o elemento */
+.team-section h3 {
+    color: var(--color-secondary);
+    text-shadow: 0 0 5px var(--color-secondary);
+    margin-bottom: 40px;
 }
 
-  
-.card:hover {
-    transform: translateY(-8px);
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-.card img {
-    width: 120px;
-    height: 120px;
+.member-card {
+    width: 200px;
+    text-align: center;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #350084;
+    border: 5px solid var(--color-primary); 
+    box-shadow: 0 0 20px rgba(160, 32, 240, 0.7); /* Efeito de destaque para a equipe */
 }
 
-.card h3 {
-    margin-bottom: 8px;
-    font-size: 22px;
-    font-weight: 700;
+.member-card h4 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: var(--color-text-light);
 }
 
-.card p {
-    font-size: 16px;
-    line-height: 1.4;
+.member-card p {
+    margin: 0;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Seção de CTA (Chamada para Ação) */
+.cta-section {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+    /* Gradiente vibrante para o bloco de CTA */
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-secondary);
+}
+
+.cta-section h3 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #000; /* Texto escuro para contraste */
+}
+
+.cta-section p {
+    margin: 0 0 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--color-dark); /* Cor escura do fundo */
+    color: var(--color-text-light);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 0 15px var(--color-secondary);
+}
+
+.cta-button:hover {
+    background-color: #3f1066;
+    transform: scale(1.05);
+}
+
+.cta-button i {
+    margin-right: 10px;
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .imagem-texto {
+@media (max-width: 900px) {
+    .logo-text-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .texto1,
-    .texto2 {
-        max-width: 100%;
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .card {
-        width: 90%;
+    .card-impact {
+        width: 45%;
+        margin-bottom: 20px;
     }
 }
 
+@media (max-width: 600px) {
+    .about-page {
+        padding: 20px;
+    }
+    
+    .card-impact {
+        width: 100%;
+    }
+
+    .team-members {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .member-card {
+        width: 100%;
+    }
+}
