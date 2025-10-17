@@ -236,3 +236,94 @@ ul {
 .justify-center {
   justify-content: center;
 }
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+  .flex-container {
+    gap: 60px;
+  }
+
+  .individual, .duo, .familia {
+    width: 300px;
+    height: 600px;
+  }
+
+  .principal {
+    font-size: 32px;
+  }
+
+  .secundario {
+    font-size: 26px;
+  }
+
+  ul {
+    font-size: 20px;
+  }
+}
+
+/* Telas até 768px (tablets em pé e celulares grandes) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .individual, .duo, .familia {
+    width: 90%;
+    height: auto;
+  }
+
+  .quadrado1, .quadrado2, .quadrado3 {
+    width: 80%;
+    height: 55px;
+    font-size: 24px;
+  }
+
+  ul {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .principal {
+    font-size: 28px;
+  }
+
+  .secundario {
+    font-size: 22px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .quadrado1, .quadrado2, .quadrado3 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .plano-individual,
+  .plano-duo,
+  .plano-familia {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
