@@ -9,7 +9,7 @@
 /* Fundo degradê */
 body {
   height: 100vh;
-  background: linear-gradient(180deg, #0b3d91 0%, #00a6c2 100%);
+  background: linear-gradient(94deg, #71DEEA 4.76%, #2E5EA0 45.92%, #103576 66.1%, #581378 83.06%);
   display: flex;
   align-items: center;
   justify-content: center;
