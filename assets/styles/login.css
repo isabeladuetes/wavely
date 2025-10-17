@@ -54,7 +54,7 @@ form input {
 }
 
 /* Botão */
-form button {
+.login {
   width: 320px;
   padding: 14px;
   border: none;
@@ -66,7 +66,7 @@ form button {
   cursor: pointer;
   transition: 0.3s;
 }
-form button:hover {
+.login:hover {
   opacity: 0.9;
 }
 
