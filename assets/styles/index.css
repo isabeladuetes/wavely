@@ -209,8 +209,29 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+/* ======= RESPONSIVIDADE ======= */
+
+/* Telas até 1024px */
 @media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
   .artist {
     width: 45%;
   }
@@ -221,17 +242,81 @@ nav a:hover {
   }
 }
 
-@media (max-width: 600px) {
-  .artist {
-    width: 100%;
+/* Telas até 768px */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.4rem;
   }
 
-  .release-list {
-    justify-content: center;
+  .search-bar input {
+    max-width: 270px;
+    padding: 8px 35px 8px 12px;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    padding: 40px 25px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .artist {
+    width: 90%;
   }
 
   .release-list img {
     width: 140px;
     height: 140px;
+  }
+
+  .artists h2, .releases h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 0;
+  }
+
+  .hero {
+    margin: 10px 0;
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .hero-img img {
+    width: 180px;
+  }
+
+  .artist img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .release-list img {
+    width: 120px;
+    height: 120px;
   }
 }
